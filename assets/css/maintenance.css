@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    padding: 150px;
+    background-repeat: repeat-y;
+    background: url("http://images6.fanpop.com/image/photos/34500000/Raining-piyal-E2-9D-A5-34558502-2560-1600.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+h1 {
+    font-size: 50px;
+}
+body {
+    font: 20px Helvetica, sans-serif;
+    color: #C5FFF8/* #333 */;
+}
+article { display: block;
+    text-align: left;
+    width: 650px;
+    margin: 0 auto;
+}
+a { color: #dc8100;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+#B0EDDB

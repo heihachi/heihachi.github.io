@@ -1,0 +1,635 @@
+/*
+Dragonfruit Template
+http://www.heihachi.com/preview/heihachi_411_dragonfruit
+*/
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+}
+.container-fluid {
+    max-width: 1600px;
+}
+.container_wapper {
+    width: 100%;
+    background: #c0c0c0;
+}
+.rcolor {
+    background: #f00;
+}
+.gcolor {
+    background: #0f0;
+}
+.bcolor {
+    background: #00f;
+}
+h1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font: normal normal normal 34px/60px 'Century Gothic', sans-serif;
+    color: #3b3b3b;
+}
+
+.heihachi_logo a:hover {
+	text-decoration: none;
+}
+/*menu*/
+#heihachi_mobile_menu {
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #f9f9f9;
+    position: fixed;
+    z-index: 5500;
+    right: -1500px;
+    display: none;
+    overflow: auto;
+}
+#heihachi_mobile_menu ul li a {
+    text-align: left;
+    background: #f15556;
+    color: #000;
+}
+#heihachi_mobile_menu ul li:hover a {
+    background: #c83233;
+	color: #fff;
+}
+#heihachi_banner_menu {
+    width: 100%;
+    background: #f9f9f9;
+    height: 94px;
+    border-bottom: 1px solid #f15556;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+}
+#heihachi_banner_menu #logo_img {
+    max-height: 90px;
+    float: left;
+}
+#heihachi_banner_menu #logo_text {
+    font: normal normal normal 36px/1em 'Century Gothic', sans-serif;
+    margin-top: 30px;
+    padding-left: 60px;
+    text-align: left;
+    color: #e35354;
+}
+#heihachi_banner_menu #logo_text span {
+    color: #9fb038;
+}
+#heihachi_banner_menu ul li a ,
+#heihachi_banner_menu ul li a:focus {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font: normal normal normal 18px/23px 'Century Gothic', sans-serif;
+    color: #000;
+    background: repeat-x url("../images/banner_bg.jpg") 0 -94px ;
+    transition-duration: .5s;
+}
+#heihachi_banner_menu ul li a:hover ,
+#heihachi_banner_menu ul li a.current
+{
+    background-position: 0 0px ;
+    background-color: #f15556;
+    color: #ffffff;
+}
+#heihachi_banner_menu #mobile_menu {
+    padding-top: 25px;
+    font-size: 30px;
+    float: right;
+    color: #e35354;
+}
+/*banner slide*/
+.banner {
+    width: 100%;
+    height: 500px;
+    margin-top: 94px;
+    position: relative;
+    overflow: hidden;
+}
+.banner ul {
+    list-style: none;
+    padding: 0;
+}
+.banner ul li {
+    float: left;
+    background-size:50px 50px;
+    height:500px;
+    width: 100%;
+}
+.banner div.slide_caption {
+	background: rgba(0, 0, 0, 0.0);
+    max-width: 600px;
+    margin: 120px auto auto auto;
+}
+.banner div.slide_caption h1 ,
+.banner div.slide_caption p {
+    background: none ;
+    text-align: center;
+    color: #fff;
+    line-height: 2em;
+    text-shadow: 1px 1px 5px rgba(150, 150, 150, 1);
+}
+.banner div.slide_caption a {
+	color: #FF6;
+}
+.banner div.slide_caption h1 {
+    font-size: 32px;
+    margin: 0;
+}
+.banner div.slide_caption p {
+    font-size: 16px;
+}
+.heihachi_banner_slide_01 {
+    background: url('../images/heihachi_banner_slide_01.jpg');
+    background-size: cover;
+}
+.heihachi_banner_slide_02 {
+    background: url('../images/heihachi_banner_slide_02.jpg');
+    background-size: cover;
+}
+.heihachi_banner_slide_03 {
+    background: url('../images/heihachi_banner_slide_03.png');
+    background-size: cover;
+}
+/*about our organization*/
+#heihachi_about {
+    background: #ffffff;
+    float: left;
+}
+#heihachi_about .about_icon img {
+    width: 100%;
+}
+#heihachi_about .about_icon h2 {
+    text-align: center;
+    font: normal normal normal 20px/25px 'Century Gothic', sans-serif;
+}
+#heihachi_about .about_icon .imgwap {
+    text-align: center;
+    border-radius: 75px;
+}
+#heihachi_about .about_icon p {
+    text-align: center;
+    font: normal normal normal 14px/23px 'Century Gothic', sans-serif;
+}
+#heihachi_about .mission {
+    background-color: #bd3e25;
+    color: #f5bd48;
+}
+#heihachi_about .product {
+    background-color: #334d5c;
+    color: #f5bd48;
+}
+#heihachi_contact .testimonial {
+    background-color: #efc84a;
+    color: #ab4921;
+}
+#heihachi_about .statistic {
+    background-color: #334d5c;
+    color: #efc84a;
+}
+#heihachi_contact #testimonial_text_wap {
+    overflow: hidden;
+}
+#heihachi_contact #testimonial_text_wap h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 12px 0;
+}
+#heihachi_contact #testimonial_text_wap h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 12px 0;
+}
+#heihachi_contact #testimonial_text_wap img {
+    margin-bottom: 20px ;
+}
+#heihachi_contact #testimonial_text_wap p {
+    font-size: 14px;
+    line-height: 2em;
+}
+#heihachi_contact .testimonial_text {
+    width: 100%;
+    float: left;
+}
+#heihachi_contact .pre_next {
+    font-size: 70px;
+    top: 50%;
+    margin-top: -35px;
+    position: absolute;
+}
+#heihachi_contact .pre_next a {
+    color: #6698b5;
+    float: left;
+}
+#heihachi_contact .pre_next a:hover {
+    color: #334d5c;
+}
+#heihachi_contact #testimonial_text_wap h1 {
+    font-size: 70px;
+    top: 50%;
+    margin-top: -35px;
+}
+#heihachi_contact .testimonial_top_bottom_spacer {
+    padding-bottom: 80px;
+}
+/*events*/
+#heihachi_skills {
+    background: #6698b5;
+    float: left;
+    overflow: hidden;
+}
+#heihachi_skills h1{
+    color: #fff;
+}
+#heihachi_skills .event_box_wap {
+    overflow:hidden;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+#heihachi_skills .event_box_wap .event_box_img {
+    position: relative;
+    top: 0;
+}
+#heihachi_skills .event_box_wap .event_box_caption {
+    position: relative;
+    top: 0;
+    padding-bottom: 10px;
+    background: #fff;
+    width: 100%;
+    border-top: 3px solid #3c6f8c;
+}
+#heihachi_skills .event_box_wap h1,
+#heihachi_skills .event_box_wap p {
+    margin: 0;
+    color: #000000;
+    text-align: left;
+}
+#heihachi_skills .event_box_wap p {
+    padding: 5px 20px 15px 20px;
+}
+#heihachi_skills .event_box_wap h1 {
+    padding: 20px 20px 20px 20px;
+    font-size: 24px;
+    line-height: 24px;
+}
+/*timeline*/
+#heihachi_timeline {
+    background: #fff;
+    float: left;
+}
+#heihachi_timeline .container-fluid {
+    max-width: 1600px;
+    position: absolute;
+    margin: auto;
+    margin-bottom: 80px;
+    background: url("../images/time_line_bg.jpg") repeat-y center top;
+}
+#heihachi_timeline .time_line_wap {
+    position: absolute;
+    display: none;
+}
+#heihachi_timeline .time_line_caption {
+    background: #f15556;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+    height: 40px;
+    clear: both;
+    color: #fff;
+}
+#heihachi_timeline .time_line_caption_open {
+    background: #9fb038;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+    height: 40px;
+    clear: both;
+    color: #fff;
+}
+#heihachi_timeline .time_line_caption_closed {
+    background: #ED8015;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+    height: 40px;
+    clear: both;
+    color: #fff;
+}
+#heihachi_timeline .time_line_paragraph {
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Century Gothic', sans-serif;
+}
+#heihachi_timeline .time_line_paragraph a {
+    color: #000;
+    text-decoration: underline;
+}
+#heihachi_timeline .left_timeline {
+    margin-left: 30px;
+}
+#heihachi_timeline .left_timeline .time_line_caption {
+    float: right;
+    margin-right: 0px;
+}
+#heihachi_timeline .right_timeline .time_line_caption {
+    float: left;
+}
+#heihachi_timeline .left_timeline .time_line_caption_open {
+    float: right;
+    margin-right: 0px;
+}
+#heihachi_timeline .right_timeline .time_line_caption_open {
+    float: left;
+}
+#heihachi_timeline .left_timeline .time_line_caption_closed {
+    float: right;
+    margin-right: 0px;
+}
+#heihachi_timeline .right_timeline .time_line_caption_closed {
+    float: left;
+}
+#heihachi_timeline .time_line_paragraph h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    padding: 20px 20px 20px 20px;
+}
+#heihachi_timeline .time_line_paragraph p {
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    line-height: 2em;
+    color: #000;
+}
+#heihachi_timeline .left_timer {
+    float: right;
+    background: url("../images/arrow_left.png") 0 5px;
+}
+#heihachi_timeline .right_timer {
+    float: left;
+    background: url("../images/arrow_right.png") 0px 5px;
+}
+#heihachi_timeline .left_timer ,
+#heihachi_timeline .right_timer {
+    padding-left:30px;
+    width: 101px;
+    position: absolute;
+}
+#heihachi_timeline .left_timer span,
+#heihachi_timeline .right_timer span {
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background: #e6e6e6;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 3px;
+    margin-top: 3px;
+}
+/* Open Source timeline */
+#heihachi_opentimeline {
+    background: #fff;
+    float: left;
+}
+#heihachi_opentimeline .container-fluid {
+    max-width: 1600px;
+    position: absolute;
+    margin: auto;
+    margin-bottom: 80px;
+    background: url("../images/time_line_bg.jpg") repeat-y center top;
+}
+#heihachi_opentimeline .time_line_wap {
+    position: absolute;
+    display: none;
+}
+#heihachi_opentimeline .time_line_caption {
+    background: #f15556;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+    height: 40px;
+    clear: both;
+    color: #fff;
+}
+#heihachi_opentimeline .time_line_caption_open {
+    background: #9fb038;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+    height: 40px;
+    clear: both;
+    color: #fff;
+}
+#heihachi_opentimeline .time_line_caption_closed {
+    background: #9fb038;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+    height: 40px;
+    clear: both;
+    color: #fff;
+}
+#heihachi_opentimeline .time_line_paragraph {
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Century Gothic', sans-serif;
+}
+#heihachi_opentimeline .time_line_paragraph a {
+    color: #000;
+    text-decoration: underline;
+}
+#heihachi_opentimeline .left_timeline {
+    margin-left: 30px;
+}
+#heihachi_opentimeline .left_timeline .time_line_caption {
+    float: right;
+    margin-right: 0px;
+}
+#heihachi_opentimeline .right_timeline .time_line_caption {
+    float: left;
+}
+#heihachi_opentimeline .left_timeline .time_line_caption_open {
+    float: right;
+    margin-right: 0px;
+}
+#heihachi_opentimeline .right_timeline .time_line_caption_open {
+    float: left;
+}
+#heihachi_opentimeline .left_timeline .time_line_caption_closed {
+    float: right;
+    margin-right: 0px;
+}
+#heihachi_opentimeline .right_timeline .time_line_caption_closed {
+    float: left;
+}
+#heihachi_opentimeline .time_line_paragraph h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    padding: 20px 20px 20px 20px;
+}
+#heihachi_opentimeline .time_line_paragraph p {
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    line-height: 2em;
+    color: #000;
+}
+#heihachi_opentimeline .left_timer {
+    float: right;
+    background: url("../images/arrow_left.png") 0 5px;
+}
+#heihachi_opentimeline .right_timer {
+    float: left;
+    background: url("../images/arrow_right.png") 0px 5px;
+}
+#heihachi_opentimeline .left_timer ,
+#heihachi_opentimeline .right_timer {
+    padding-left:30px;
+    width: 101px;
+    position: absolute;
+}
+#heihachi_opentimeline .left_timer span,
+#heihachi_opentimeline .right_timer span {
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background: #e6e6e6;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 3px;
+    margin-top: 3px;
+}
+/*contact*/
+#heihachi_contact {
+    background: #6698b5;
+    float: left;
+}
+#heihachi_contact h1 {
+    color: #fff;
+}
+#heihachi_contact h2 {
+    font-size: 24px;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+#heihachi_contact_map {
+    width: 100%;
+    height: 320px;
+    float: left;
+    margin-bottom: 40px;
+}
+#heihachi_contact ul li a {
+    background: none;
+}
+#heihachi_contact ul li a i {
+    width: 60px;
+    padding: 20px 0;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+#heihachi_contact p {
+    color: #fff;
+    line-height: 30px;
+	margin-top: 15px;
+}
+#heihachi_contact input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+}
+#heihachi_contact textarea {
+    border: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+#heihachi_contact button {
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background: #eaeaea;
+}
+#heihachi_contact button:hover {
+    background: #f4f4f4;
+}
+/*heihachi_footer*/
+#heihachi_footer {
+    width: 100%;
+    border-top: 2px solid #507f9a;
+    height: 70px;
+    background: #447693;
+    float: left;
+}
+#heihachi_footer p {
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+#heihachi_footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+/*  Small devices (tablets, 768px and up)  */
+@media (max-width: 768px ) {
+    #heihachi_contact .pre_next {
+        font-size: 15px;
+    }
+    #heihachi_timeline .right_timer {
+        background-position: center center;
+    }
+}
+/*  Medium devices (desktops, 992px and up)  */
+@media (max-width: 970px ) {
+    #heihachi_timeline .right_timer {
+        background-position: 100px 5px;
+    }
+    #heihachi_banner_menu #logo_text {
+        font: normal normal normal 30px/1em 'Century Gothic', sans-serif;
+    }
+    #heihachi_timeline .container-fluid {
+        background: url("../images/time_line_bg.jpg") repeat-y 28px 0;
+    }
+}
+/*  Large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px ) {
+}
+
+.error {
+	border: 1px solid #BC2A4D;
+	padding: 10px;
+	background-color: #ffbbbb;
+	color: #BC2A4D;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+span.arrows {
+ position: relative;
+ top: 1px;
+ display: inline-block;
+ font-family: 'Glyphicons Halflings';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 65px;
+ color: #fff;
+ line-height: 5;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
